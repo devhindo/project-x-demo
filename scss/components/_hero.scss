@@ -1,0 +1,29 @@
+.hero {
+    @include hero();
+    
+    &__heading {
+        font-weight: $font-weight-bold;
+    }
+
+
+    &__lead {
+        font-size: font-size(1.25rem);
+        @include hero($spacer * 2);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        padding: 0.5rem 2rem;
+        &:hover {
+            background-color: #5c636a;
+        }
+    }
+}
+
+.hero--primary {
+    @include hero-variant($valhalla);
+}
+
+
+
+

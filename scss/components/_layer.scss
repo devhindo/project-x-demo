@@ -1,0 +1,25 @@
+/**
+ *conponents > layer 
+ */
+
+
+
+
+
+.layer {
+    @include layer();
+    &--dark {
+        @include layer-variant(rgb(29, 29, 32));
+       }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    &--heading {
+        margin-bottom: 1.5rem;
+    }
+    
+    &--copy {
+        margin-bottom: 1.5rem;
+    }
+}

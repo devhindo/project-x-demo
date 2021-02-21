@@ -1,0 +1,17 @@
+/**
+ * Layouts > Globals > Masthead
+ */
+
+
+.masthead {
+    &__body {
+        @include padding-bottom($masthead-body-padding-y);
+        @include padding-top($masthead-body-padding-y);
+    
+    }
+    .logo {
+        max-width: 75px;
+        border-radius: 100px;
+    }
+}
+ 

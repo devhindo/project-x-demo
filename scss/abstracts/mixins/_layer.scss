@@ -1,0 +1,13 @@
+
+
+@mixin layer($padding-y: $layer-padding-y) {
+    @include padding-top($padding-y);
+    @include padding-bottom($padding-y);
+}
+
+
+@mixin layer-variant($background) {
+    background-color: $background;
+    color: color-contrast($background);
+}
+
